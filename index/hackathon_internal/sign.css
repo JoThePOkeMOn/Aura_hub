@@ -1,0 +1,123 @@
+:root {
+  --btn-bg: #d8bfd8;
+  --bg-overlay: rgba(0, 0, 0, 0.6); /* Overlay color */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nitendofont";
+}
+@font-face {
+  font-family: "Nitendofont";
+  src: url("fonts/NineteenEightySeven-MzMJ.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url(./images/pixel-art-mystical-background/7481714.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Aligns items vertically */
+  height: 100vh;
+}
+
+.user-credentials {
+  width: 450px;
+  padding: 20px 30px;
+  background-color: #47107a;
+  border-radius: 10px;
+}
+
+.user-credentials label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-credentials input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: rgba(
+    230,
+    230,
+    250,
+    0.7
+  ); /* Light lavender with transparency */
+  color: #333;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--btn-bg);
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #d568d5;
+}
+
+/*footer {
+  background-color: #d8bfd8;
+  text-align: center;
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+}*/
+
+p {
+  text-align: center;
+  margin-top: 20px; /* Margin to give space below the form */
+  color: #ffffff;
+  font-size: small;
+}
+
+a {
+  text-decoration: none; /* Removes the underline */
+  color: #ffffff; /* Default color */
+  font-weight: bold; /* Makes text bold */
+}
+
+nav {
+  /* Dark background for the nav bar */
+  padding: 10px 20px; /* Add some padding to the nav */
+  display: flex;
+  align-items: center; /* Vertically center the logo */
+  justify-content: space-between; /* Space out logo and other elements (if any) */
+}
+
+.logo-heading {
+  margin-top: 5px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}

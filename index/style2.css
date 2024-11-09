@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://img.freepik.com/premium-photo/moon-sky-night-background-asset-game-2d-futuristic_797981-29869.jpg?w=740");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Nitendofont";
+  color: #fff;
+}
+@font-face {
+  font-family: "Nitendofont";
+  src: url("fonts/NineteenEightySeven-MzMJ.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  background-color: #4a148c;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h1 {
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.profile {
+  text-align: center;
+  margin: 20px;
+}
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+.xp-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.xp-progress {
+  width: 90%;
+  height: 10px;
+  background-color: #4a148c;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.column {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 5px;
+  width: 20%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.column h2 {
+  color: #4a148c;
+}
+.task {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #444;
+}
+.points,
+.cost {
+  font-size: 12px;
+  color: #4a148c;
+}
+.add-task {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #4a148c;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+  color: black;
+  
+}
+.footer .container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer .column {
+  flex: 1;
+  min-width: 150px;
+  padding: 10px;
+}
+.footer .column h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer .column a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+.footer-bottom {
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #888;
+}
+.social-icons img {
+  width: 24px;
+  margin: 0 5px;
+}

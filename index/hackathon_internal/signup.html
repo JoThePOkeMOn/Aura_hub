@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/hackathon_internal/sign.css">
+    <script type="module" src="/hackathon_internal/register.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="#">
+            <h1 style="color: black;" class="logo-heading">AURA<span style="color: #cb6ce6;">HUB</span></h1>
+        </a>
+    </nav>
+    <div class="main-container">
+
+        <form class="user-credentials" action="/login" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" class="js-username" placeholder="Username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="js-email" placeholder="Email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" class="js-password" placeholder="Password" name="password" required>
+
+            <!-- <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" name="confirm-password"
+                required> -->
+
+            <button type="submit" class="js-submit-btn">Sign Up</button>
+        </form>
+
+        <p>Already have an account?<a href="/hackathon_internal/login.html">Log in</a></p>
+
+    </div>
+
+
+</body>
+<!-- <footer> -->
+<!-- hh -->
+<!-- </footer> -->
+<script src="/hackathon_internal/index.js"></script>
+
+</html>

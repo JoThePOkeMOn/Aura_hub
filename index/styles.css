@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Nitendo";
+  src: url("fonts/NineteenEightySeven-MzMJ.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Nitendo";
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/Purple universe.jpg") no-repeat center center fixed;
+  background-repeat: space;
+  background-size: cover; /* Adjusted to cover the entire viewport */
+  color: palegoldenrod;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* Adjusted padding */
+  background: rgba(0, 0, 0, 0);
+}
+
+/* .logo img {
+    height: 50px;
+} */
+
+.login-button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 2rem;
+}
+
+/* Hero Section Styles */
+.hero {
+  padding: 100px 20px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 60px;
+}
+
+.hero-content img {
+  height: 300px;
+  width: 500px;
+}
+
+.hero-content-text {
+  max-width: 700px;
+}
+
+.hero-content-text h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-content-text p {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+
+/* Glowing Button Styles */
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* About Section Styles */
+.about {
+  padding: 50px 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-content--main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-content--main h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-content--main p {
+  max-width: 1000px;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.about-content--features {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-content--features-1,
+.about-content--features-2,
+.about-content--features-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-content--features-1 h2,
+.about-content--features-2 h2,
+.about-content--features-3 h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.about-content--features-1 p,
+.about-content--features-2 p,
+.about-content--features-3 p {
+  max-width: 500px;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+.about-content--features-1 img,
+.about-content--features-2 img,
+.about-content--features-3 img {
+  height: 450px;
+  width: 510px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #330033; /* Dark purple */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+}
+
+.footer-social a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 1em;
+}
